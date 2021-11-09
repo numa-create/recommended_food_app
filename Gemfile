@@ -47,6 +47,7 @@ gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
   # 次の3つを追加
+  gem "devise"
   gem "pry-byebug"
   gem "pry-doc"
   gem "pry-rails"
