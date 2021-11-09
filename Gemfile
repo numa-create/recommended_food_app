@@ -25,11 +25,6 @@ gem "jbuilder", "~> 2.7"
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.4.4", require: false
 
-group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem "byebug", platforms: %i[mri mingw x64_mingw]
-end
-
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem "web-console", ">= 4.1.0"
@@ -45,8 +40,8 @@ end
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: %i[mri mingw x64_mingw]
-  # 次の3つを追加
   gem "devise"
   gem "pry-byebug"
   gem "pry-doc"
@@ -57,4 +52,7 @@ group :development, :test do
   gem "pre-commit", require: false
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
+  # 多言語対応(Rails 6の場合)
+  gem "devise-i18n"
+  gem "rails-i18n", "~> 6.0"
 end
