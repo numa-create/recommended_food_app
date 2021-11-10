@@ -2,6 +2,7 @@ require:
   - rubocop-rails
 
 AllCops:
+  NewCops: enable
   # アプリの Ruby のバージョンに合わせること!!
   TargetRubyVersion: 2.7.3p183
   Exclude:
