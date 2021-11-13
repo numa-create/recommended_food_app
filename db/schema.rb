@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2021_11_12_110258) do
   enable_extension "plpgsql"
 
   create_table "foods", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.text "comment"
     t.bigint "user_id", null: false
     t.datetime "created_at", precision: 6, null: false

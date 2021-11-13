@@ -1,7 +1,7 @@
 <h1>投稿詳細</h1>
 <p>【メールアドレス】 <%= @food.user.email %></p>
 <p>【食品名】 <%= @food.name %></p>
-<p>【コメント】 <%= @food.comment %></p>
+<p>【コメント】 <%= simple_format(h(@food.comment)) %></p>
 <% if current_user.id == @food.user_id %>
   <p>
     <%= link_to "編集", edit_food_path(@food) %>
