@@ -53,6 +53,7 @@ group :development, :test do
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
   # 多言語対応(Rails 6の場合)
+  gem "carrierwave", "~> 2.0"
   gem "devise-i18n"
   gem "rails-i18n", "~> 6.0"
 end
