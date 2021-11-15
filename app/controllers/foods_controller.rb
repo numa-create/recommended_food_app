@@ -35,6 +35,8 @@ class FoodsController < ApplicationController
 
   def food_params
     params.require(:food).permit(:name, :comment)
+    # ***** 画像も受け取れるように :image を追加 *****
+    params.require(:food).permit(:image)
   end
 
   def set_food
